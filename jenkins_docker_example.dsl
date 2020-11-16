@@ -1,8 +1,6 @@
-job('jenkins-docker-example') {
-  triggers {
-    cron('@daily')
-  }
-  steps {
-    shell('docker run ghcr.io/markvr/jenkins-docker-example:a1ce99
- }
-}
+new JobBuilder() 
+  .name('jenkins-docker-example')
+  .image('jenkins-docker-example')
+  .tag('c025fa')
+  .schedule('@daily')
+  .build(this)
