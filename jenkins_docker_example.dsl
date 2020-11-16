@@ -3,6 +3,6 @@ job('jenkins-docker-example') {
     cron('@daily')
   }
   steps {
-    shell('docker run ghcr.io/markvr/jenkins-docker-example:8ddda0
+    shell('docker run ghcr.io/markvr/jenkins-docker-example:a1ce99
  }
 }
